@@ -9,8 +9,11 @@
 		});
 
 		$("[class^=year]").each((i, el) => {
-			var year = 2013; 
-			el.innerHTML = year + (parseInt(el.className.replace("year", "")) || 0);
+			var year = 2008; 
+			var className = el.className;
+			var match = className.match(/year-(-?\d+)/); 
+			var offset = match ? parseInt(match[1]) : 0;
+			el.innerHTML = year + offset; 
 		});
 
 	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
