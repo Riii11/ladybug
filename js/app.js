@@ -8,10 +8,10 @@
 			$(".mobile-navigation").slideToggle();
 		});
 
-  		$("[class^=year]").each((i, el) => {
-  			var year = new Date().getFullYear();
-  			el.innerHTML = year + (parseInt(el.className.replace("year", "")) || 0);
-  		});
+		$("[class^=year]").each((i, el) => {
+			var year = 2008; 
+			el.innerHTML = year + (parseInt(el.className.replace("year", "")) || 0);
+		});
 
 	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
